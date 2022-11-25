@@ -11,6 +11,7 @@ def read_in_file(list_of_words: list):
         print("File Not Found")
     return list_of_words
 
+
 # Method that asks for information:
 def word_input():
     word: str = input("What was your guess (LOWERCASE): ")
@@ -28,5 +29,7 @@ def word_input():
 # Print next best guesses
 def return_best_guesses(n, list):
     print("Best guesses: ")
+    if n > len(list):
+        n = len(list)
     for i in range(n):
         print(list[i])
