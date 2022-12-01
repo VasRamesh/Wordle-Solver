@@ -3,7 +3,7 @@
 # Method to read in the file:
 def read_in_file(list_of_words: list):
     try:
-        words_file = open("words.txt", "r")
+        words_file = open("wordle-nyt-answers-alphabetical.txt", "r")
         for word in words_file:
             list_of_words.append(word)
         words_file.close()
@@ -31,5 +31,7 @@ def return_best_guesses(n, list):
     print("Best guesses: ")
     if n > len(list):
         n = len(list)
+    if len(list) == 0:
+        print("Error: Word Not found")
     for i in range(n):
         print(list[i])

@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
         # Guess a letter and press enter
 
-        guess_turn(page, "crane")  # TO DO
+        guess_turn(page, "penis")  # TO DO
         scrape_colors(page, "guess")
         time.sleep(1000)
 
